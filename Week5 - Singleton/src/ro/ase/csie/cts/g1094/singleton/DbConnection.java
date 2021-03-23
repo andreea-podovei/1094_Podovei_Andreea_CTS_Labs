@@ -4,6 +4,7 @@ public class DbConnection {
 	String connString;
 	String schema;
 	
+	//eager-instantiation
 	private static DbConnection connection = null; //global reference to that unique object
 	private DbConnection() {
 		System.out.println("Creating a connection object");
@@ -18,6 +19,7 @@ public class DbConnection {
 		this.schema = schema;
 	}
 
+	//lazy-instantiation of the unique object
 	public static DbConnection getConnection(){
 		if(DbConnection.connection == null){
 			connection = new DbConnection();
