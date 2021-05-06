@@ -19,6 +19,7 @@ public class TestDecorator {
 		blueDragon.takeAHit(1000);
 		blueDragon.takeAHit(1000);
 		blueDragon.move();
+		
 
 	}
 
