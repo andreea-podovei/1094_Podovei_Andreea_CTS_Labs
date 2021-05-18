@@ -16,6 +16,9 @@ public class TestPrototype {
 		Tree3DModel tree5 = (Tree3DModel) tree1.clone();
 		Tree3DModel tree6 = (Tree3DModel) tree1.clone();
 		
+		if(tree1 != tree4)
+			System.out.println("They are different");
+		else System.out.println("They are the same");
 		System.out.println("The end");
 	}
 
